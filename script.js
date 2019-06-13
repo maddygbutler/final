@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    $("#clear").click(function(){
+        $("#result").empty();
+        $("#image").empty();
+    });
+
     $("#search").click(function () {
 
         $.ajax({
@@ -8,6 +13,7 @@ $(document).ready(function() {
             success: callBack
         })
     });
+
 
 
 
